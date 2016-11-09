@@ -13,8 +13,15 @@ import re
 import sys
 
 input_file = open('input_data.txt')
+#input_file = open('easy_test.txt','r')
+output_file = open('user.txt','w+')
 
 line_data = input_file.read()
-input_file.close()
+line_data.decode("utf-8")
+print "データの読み取りとデコード"
 
-print "デバッグ用"
+output_file.write( str(line_data) )
+
+input_file.close
+output_file.close
+
