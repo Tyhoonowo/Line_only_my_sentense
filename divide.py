@@ -20,6 +20,16 @@ line_data = input_file.read()
 line_data.decode("utf-8")
 print "データの読み取りとデコード"
 
+#line_split_data = line_data.split("i")
+#line_split_data = line_data.split(r'\d+')
+line_split_data = re.split(r'\n\d+:\d+ ',line_data)
+
+for i in range(len(line_split_data)):
+	print line_split_data[i]
+
+for k in line_split_data:
+	print k
+
 output_file.write( str(line_data) )
 
 input_file.close
