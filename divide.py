@@ -12,7 +12,7 @@ import MeCab
 import re
 import sys
 
-USER_NAME = "村橋達明"
+USER_NAME = "名前入力"
 # USER_NAME = "りんな"
 
 
